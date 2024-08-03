@@ -17,7 +17,7 @@
   ```   
 - 설치  
   ```
-  helm install {release nmae} [\[-f {custom config file}\] subride/subride-front 
+  helm install {release nmae} [-f {custom config file}] subride/subride-front 
   ```  
   
 ## 애플리케이션 삭제  
