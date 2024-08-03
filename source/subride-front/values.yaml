@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: nginx
-  pullPolicy: IfNotPresent
+  repository: hiondal/subride-front
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "2.0.0"
 
-imagePullSecrets: []
+imagePullSecrets: ["dockerhub"]
 nameOverride: ""
 fullnameOverride: ""
 
