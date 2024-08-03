@@ -14,10 +14,15 @@
 - 설치할 namespace로 이동  
   ```
   kubens {namespace}
+  ex) kubens ondal
   ```   
+- Configuration 파일 작성   
+  
+  
 - 설치  
   ```
   helm install {release nmae} [-f {custom config file}] subride/subride-front 
+  helm install front -f front.yaml subride/subride-front
   ```  
   
 ## 애플리케이션 삭제  
