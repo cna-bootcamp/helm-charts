@@ -10,7 +10,8 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: "2.0.0"
 
-imagePullSecrets: ["dockerhub"]
+imagePullSecrets: 
+  - dockerhub
 nameOverride: "subride-front"
 fullnameOverride: "subride-front"
 
