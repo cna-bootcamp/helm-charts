@@ -11,7 +11,7 @@ image:
   tag: "2.0.0"
 
 imagePullSecrets: 
-  - dockerhub
+  - name: "dockerhub"
 nameOverride: "subride-front"
 fullnameOverride: "subride-front"
 
