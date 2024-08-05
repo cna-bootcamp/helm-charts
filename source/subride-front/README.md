@@ -17,8 +17,16 @@
   ex) kubens ondal
   ```   
 - Configuration 파일 작성   
-  
-  
+  ```
+  replicaCount: 1
+  ingress:
+    hosts:
+      - host: gappa.subride-front.43.200.12.214.nip.io
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+  ```  
+
 - 설치  
   ```
   helm install {release nmae} [-f {custom config file}] subride/subride-front 

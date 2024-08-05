@@ -1,0 +1,15 @@
+configMap:
+  data:
+    CONFIG_SERVER_FQDN: http://config:18080
+    EUREKA_SERVERS: http://eureka:18080/eureka/
+    DB_DRIVER: com.mysql.cj.jdbc.Driver
+    MEMBER_URI: http://member:18080
+    SUBRECOMMEND_URI: http://subrecommend:18080
+    MYSUB_URI: http://mysub:18080
+    MYGRP_URI: http://mygrp:18080
+    FRONT_HOST: http://subride-front.43.200.12.214.nip.io,http://localhost:3000
+    RABBITMQ_HOST: rabbitmq
+    RABBITMQ_PORT: "5672"
+    RABBITMQ_USERNAME: guest
+    JWT_EXPIRATION_TIME: "36000"
+    REFRESH_TOKEN_EXPIRATION_TIME: "360000"

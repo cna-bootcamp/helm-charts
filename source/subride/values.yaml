@@ -1,0 +1,59 @@
+global:
+  common-config:
+    enabled: true
+
+name: config
+replicaCount: 1
+imagePullSecrets: dockerhub
+
+image:
+  repository: docker.io/hiondal/config
+  tag: latest
+  pullPolicy: Always
+
+containerPort: 18080
+
+configMap:
+  enabled: true
+  data:
+    SERVER_PORT: "18080"
+    GIT_URL: https://github.com:443/cna-bootcamp/subride-config.git
+    GIT_USERNAME: hiondal
+    GIT_BRANCH: main
+
+secret:
+  enabled: true
+  data:
+    GIT_TOKEN: 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
+    ENCRYPT_KEY: CL4cboqlIweOqt93wjzZi/qjCxcSOYAMgzdKiy6cG2Y=
+
+resources:
+  requests:
+    cpu: 256m
+    memory: 256Mi
+  limits:
+    cpu: 500m
+    memory: 1024Mi
+
+service:
+  type: ClusterIP
+  port: 18080
+  targetPort: 18080
+
+ingress:
+  enabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+  className: nginx
+  rules:
+    - host: gappa.config.43.200.12.214.nip.io
+      http:
+        paths:
+          - path: /(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: config
+                port:
+                  number: 18080
