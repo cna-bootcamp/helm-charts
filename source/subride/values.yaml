@@ -51,8 +51,3 @@ ingress:
         paths:
           - path: /
             pathType: Prefix
-            backend:
-              service:
-                name: config
-                port:
-                  number: 18080
