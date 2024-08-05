@@ -31,9 +31,9 @@ spec:
             pathType: {{ .pathType }}
             backend:
               service:
-                name: {{ .backend.service.name | quote }}
+                name: {{ include "main-chart.fullname" . }}
                 port:
-                  number: {{ .backend.service.port.number }}
+                  number: {{ .Values.service.port }}
           {{- end }}
     {{- end }}
   {{- end }}
