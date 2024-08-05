@@ -34,8 +34,14 @@ spec:
                 fieldRef:
                   fieldPath: metadata.namespace          
           envFrom:
+            {{- if (index .Values.global "common-config" "enabled") }}
             - configMapRef:
-                name: subride
+              name: subride
+            {{- end }}          
+            {{- if .Values.configMap.enabled }}
+            - configMapRef:
+                name: {{ include "main-chart.fullname" . }}
+            {{- end }}
             {{- if .Values.secret.enabled }}
             - secretRef:
                 name: {{ include "main-chart.fullname" . }}
