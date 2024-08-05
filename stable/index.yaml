@@ -15,7 +15,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.3
-    created: "2024-08-06T02:37:28.014369+09:00"
+    created: "2024-08-06T03:21:40.625266+09:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -44,24 +44,24 @@ entries:
   subride:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-08-06T02:37:28.014859+09:00"
+    created: "2024-08-06T03:21:40.62594+09:00"
     description: Subride
-    digest: 25d15dff294e23708e9cad34e306685ddd4093a2ce3b089d62768cc415a4e804
+    digest: b5173a982dd7360762b41674d0ff604da58a0fcf466af2feea55582b0e41e897
     icon: https://d36jcksde1wxzq.cloudfront.net/saas-mega/blueFingerprint.png
     keywords:
     - subride
-    kubeVersion: '>=1.23.3'
+    kubeVersion: '>=1.23.0'
     maintainers:
     - email: hiondal@gmail.com
       name: HaeKyung Lee
     name: subride
     urls:
-    - subride-1.0.2.tgz
-    version: 1.0.2
+    - subride-1.0.3.tgz
+    version: 1.0.3
   subride-front:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-08-06T02:37:28.015683+09:00"
+    created: "2024-08-06T03:21:40.626747+09:00"
     description: 구독관리 Frontend Application
     digest: 9644586b7bd88a06ea1a3f89458341d53c34918fefeeba1ddc6e7069cec1803c
     home: https://github.com/cna-bootcamp/subride-front.git
@@ -81,4 +81,4 @@ entries:
     urls:
     - subride-front-1.1.0.tgz
     version: 1.1.0
-generated: "2024-08-06T02:37:28.00865+09:00"
+generated: "2024-08-06T03:21:40.617766+09:00"

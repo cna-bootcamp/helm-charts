@@ -1,8 +1,8 @@
 apiVersion: v2
 name: subride
 description: Subride
-version: 1.0.2
-kubeVersion: ">=1.23.3"
+version: 1.0.3
+kubeVersion: ">=1.23.0"
 keywords:
   - subride
 maintainers: # (optional)
