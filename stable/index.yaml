@@ -15,7 +15,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 7.2.3
-    created: "2024-08-06T13:02:11.504247+09:00"
+    created: "2024-08-06T13:03:39.084213+09:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -44,7 +44,7 @@ entries:
   subride:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-08-06T13:02:11.504774+09:00"
+    created: "2024-08-06T13:03:39.084898+09:00"
     description: Subride
     digest: 236e1049ef99700b2009959b571d4a51957349ab4127bbfbe2db06cb635f1b28
     icon: https://d36jcksde1wxzq.cloudfront.net/saas-mega/blueFingerprint.png
@@ -61,7 +61,7 @@ entries:
   subride-front:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-08-06T13:02:11.505577+09:00"
+    created: "2024-08-06T13:03:39.085739+09:00"
     description: 구독관리 Frontend Application
     digest: 9644586b7bd88a06ea1a3f89458341d53c34918fefeeba1ddc6e7069cec1803c
     home: https://github.com/cna-bootcamp/subride-front.git
@@ -81,4 +81,4 @@ entries:
     urls:
     - subride-front-1.1.0.tgz
     version: 1.1.0
-generated: "2024-08-06T13:02:11.498012+09:00"
+generated: "2024-08-06T13:03:39.07847+09:00"
