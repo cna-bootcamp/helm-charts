@@ -1,50 +1,9 @@
 apiVersion: v1
 entries:
-  redis:
-  - annotations:
-      category: Database
-      images: |
-        - name: os-shell
-          image: docker.io/bitnami/os-shell:11-debian-11-r92
-        - name: redis-exporter
-          image: docker.io/bitnami/redis-exporter:1.55.0-debian-11-r3
-        - name: redis-sentinel
-          image: docker.io/bitnami/redis-sentinel:7.2.3-debian-11-r2
-        - name: redis
-          image: docker.io/bitnami/redis:7.2.3-debian-11-r2
-      licenses: Apache-2.0
-    apiVersion: v2
-    appVersion: 7.2.3
-    created: "2024-08-06T13:07:30.745146+09:00"
-    dependencies:
-    - name: common
-      repository: oci://registry-1.docker.io/bitnamicharts
-      tags:
-      - bitnami-common
-      version: 2.x.x
-    description: Redis(R) is an open source, advanced key-value store. It is often
-      referred to as a data structure server since keys can contain strings, hashes,
-      lists, sets and sorted sets.
-    digest: 7069129ea36d50ec9c6b494aa4d7e85395f443e36c4ba8765506776dcae03f3a
-    home: https://bitnami.com
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - name: VMware, Inc.
-      url: https://github.com/bitnami/charts
-    name: redis
-    sources:
-    - https://github.com/bitnami/charts/tree/main/bitnami/redis
-    urls:
-    - redis-18.6.1.tgz
-    version: 18.6.1
   subride:
   - apiVersion: v2
     appVersion: latest
-    created: "2024-08-06T13:07:30.745804+09:00"
+    created: "2024-08-07T01:03:09.997435+09:00"
     description: Subride
     digest: 236e1049ef99700b2009959b571d4a51957349ab4127bbfbe2db06cb635f1b28
     icon: https://d36jcksde1wxzq.cloudfront.net/saas-mega/blueFingerprint.png
@@ -58,27 +17,4 @@ entries:
     urls:
     - subride-1.0.4.tgz
     version: 1.0.4
-  subride-front:
-  - apiVersion: v2
-    appVersion: latest
-    created: "2024-08-06T13:07:30.746575+09:00"
-    description: 구독관리 Frontend Application
-    digest: 9644586b7bd88a06ea1a3f89458341d53c34918fefeeba1ddc6e7069cec1803c
-    home: https://github.com/cna-bootcamp/subride-front.git
-    icon: https://d36jcksde1wxzq.cloudfront.net/saas-mega/blueFingerprint.png
-    keywords:
-    - subride
-    - front
-    kubeVersion: '>=1.23.3'
-    maintainers:
-    - email: hiondal@gmail.com
-      name: HaeKyung Lee
-    - email: happycloudpak@gmail.com
-      name: HappyCloudPak
-    name: subride-front
-    sources:
-    - https://github.com/cna-bootcamp/subride-front/tree/k8s
-    urls:
-    - subride-front-1.1.0.tgz
-    version: 1.1.0
-generated: "2024-08-06T13:07:30.739447+09:00"
+generated: "2024-08-07T01:03:09.996368+09:00"
