@@ -3,6 +3,7 @@ global:
     enabled: true
 
 name: config
+fullnameOverride: config
 replicaCount: 1
 imagePullSecrets: dockerhub
 
